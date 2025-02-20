@@ -1,69 +1,110 @@
-# Welcome to your Lovable project
+# React Application with Redux and API Integration
 
-## Project info
+## Objective
+Develop a React application that replicates a provided Figma design and integrates with specified public APIs while implementing Redux for state management.
 
-**URL**: https://lovable.dev/projects/07bb6dcd-cfc9-4a11-9e93-776327144965
+## Features
+- Pixel-perfect implementation of the provided Figma design.
+- Multi-page layout including:
+  - Homepage
+  - User Profile Page
+  - Posts Listing Page
+- API integration with:
+  - Random User API for user profiles
+  - JSONPlaceholder API for posts and comments
+- Global state management using Redux Toolkit.
+- Responsive design across various devices.
 
-## How can I edit this code?
+## Bonus Features *(Optional)*
+- Search functionality to filter posts.
+- Dark mode toggle.
+- Form handling for adding new comments.
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/07bb6dcd-cfc9-4a11-9e93-776327144965) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## Project Structure
+```
+src/
+├── components/
+├── pages/
+├── redux/
+├── services/
+├── styles/
+├── App.jsx
+└── main.jsx
 ```
 
-**Edit a file directly in GitHub**
+## Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-**Use GitHub Codespaces**
+### Installation
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd <repository-folder>
+```
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Available Scripts
+Run the following scripts to manage the application:
 
-## What technologies are used for this project?
+- **Development Server:**
+```bash
+npm run dev
+```
+Starts the app with Vite in development mode.
 
-This project is built with .
+- **Production Build:**
+```bash
+npm run build
+```
+Generates a production build.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Development Build:**
+```bash
+npm run build:dev
+```
+Builds the app in development mode.
 
-## How can I deploy this project?
+- **Linting:**
+```bash
+npm run lint
+```
+Checks for code quality and formatting issues.
 
-Simply open [Lovable](https://lovable.dev/projects/07bb6dcd-cfc9-4a11-9e93-776327144965) and click on Share -> Publish.
+- **Preview Production Build:**
+```bash
+npm run preview
+```
+Serves the production build for preview.
 
-## I want to use a custom domain - is that possible?
+## API Endpoints Used
+- Random User API: `https://randomuser.me/api/`
+- JSONPlaceholder API:
+  - Posts: `https://jsonplaceholder.typicode.com/posts`
+  - Comments: `https://jsonplaceholder.typicode.com/comments`
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## Deployment
+Deploy the app to Vercel, Netlify, or GitHub Pages:
+```bash
+yarn build
+yarn preview
+```
+
+## Figma Design
+[View Figma Design](https://www.figma.com/design/DX2K5Oty2V1BtdolujXLZY/App-Saas-Landing-Page-(Community)?node-id=3-235)
+
+## Submission
+- Host code in a public GitHub repository.
+- Deploy and share the live demo URL.
+- Ensure the code is well-documented with comments for complex logic.
+
+## License
+This project is licensed under the MIT License.
+
