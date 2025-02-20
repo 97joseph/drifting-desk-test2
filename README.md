@@ -15,7 +15,7 @@ Develop a React application that replicates a provided Figma design and integrat
 - Global state management using Redux Toolkit.
 - Responsive design across various devices.
 
-## Bonus Features *(Optional)*
+##  Features *(Optional)*
 - Search functionality to filter posts.
 - Dark mode toggle.
 - Form handling for adding new comments.
